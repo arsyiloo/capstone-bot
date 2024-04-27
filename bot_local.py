@@ -171,7 +171,7 @@ def send_plot(message):
 
         # second subplot: total approved conversion per age group
         axes[1].bar(x=df_plot_age, height=df_plot['approved_conversion'], color='#000000')
-        axes[1].set_ylabel('Total Approved Conversion', fontsize=8)
+        axes[1].set_ylabel('Total Approved\nConversion', fontsize=8)
 
         # third subplot: average CPC per age group
         axes[2].bar(x=df_plot_age, height=df_plot['cpc'], color='#AE2024')
@@ -206,7 +206,7 @@ def send_plot(message):
 
         # VOICE MESSAGE
         plot_info = list(zip(
-            ['Total Spent', 'Total Approved Conversion', 'Total CPC'],
+            ['total spent', 'total approved conversion', 'total CPC'],
             max_age,
             min_age))
 
